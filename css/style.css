@@ -38,6 +38,7 @@ a {
     padding: 1em;
     text-decoration: none;
     transition: .5s;
+    color: inherit;
 }
 
 a:visited {
@@ -405,6 +406,43 @@ span {
 }
 
 /* ////// */
+
+#aroundu {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 2em;
+    padding-top: 3em;
+    padding-left: 0em;
+}
+
+#aroundu .project-text{
+    width: 100%;
+}
+
+#aroundu-content {
+    position: relative;
+    left: 0em;
+    width: 70%;
+    height: auto;
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: row;
+}
+
+#aroundu-poster {
+    border: 1px dotted black;
+    width:70%;
+    padding: .5em;
+}
+
+#aroundu-poster img {
+    width: 100%;
+}
+
+/* /////// */
 
 #skdrm {
     
