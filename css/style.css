@@ -264,7 +264,7 @@ article {
     /* margin-left: 1em; */
     margin-top: .5em;
     padding: 0;
-    width: 60%;
+    width: 50%;
 }
 
 .notes {
@@ -599,6 +599,37 @@ span {
 
 /* /////// */
 
+#bijou {
+    
+    /* border: 1px solid green; */
+    width: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 2em;
+    padding-top: 3em;
+    padding-left: 0em;
+}
+
+#bijou .node, #bijou .project-text{ 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#bijou:has(.square:hover) a {
+    color: #ddff42;
+    text-shadow: 0px 0px 10px rgb(244, 93, 6), 0px 0px 20px rgb(244, 93, 6);
+
+}
+
+#bijou:has(a:hover) .square {
+    background-color: #ddff42;
+    box-shadow: 0px 0px 10px rgb(244, 93, 6);
+
+
+}
+
 .bijou-row {
     display: flex;
     flex-wrap: wrap;
@@ -623,7 +654,7 @@ span {
 }
 
 .bijou-column2 {
-    margin-top: 13em;
+    margin-top: 9em;
     margin-left: 3em;
     flex: 53%;
     max-width: 53%;
@@ -694,7 +725,32 @@ span {
     width: 90%;
 }
 
+#poster-inv {
+    opacity: 0;
+}
+
 /* pixie column */
+
+
+#pixie .node, #pixie, #pixie .project-text{ 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+#pixie:has(.square:hover) a {
+    color: #ddff42;
+    text-shadow: 0px 0px 10px rgb(244, 93, 6), 0px 0px 20px rgb(244, 93, 6);
+
+}
+
+#pixie:has(a:hover) .square {
+    background-color: #ddff42;
+    box-shadow: 0px 0px 10px rgb(244, 93, 6);
+
+
+}
 
 #pixie {
     
@@ -731,6 +787,268 @@ span {
     margin-left: 3em;
     vertical-align: middle;
     width: 100%;
+}
+
+#pixie-inv {
+    opacity: 0;
+}
+
+#capsule {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 2em;
+    padding-top: 3em;
+    padding-left: 0em;
+}
+
+#capsule .node, #capsule, #capsule .project-text{ 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+#capsule:has(.square:hover) a {
+    color: #ddff42;
+    text-shadow: 0px 0px 10px rgb(244, 93, 6), 0px 0px 20px rgb(244, 93, 6);
+
+}
+
+#capsule:has(a:hover) .square {
+    background-color: #ddff42;
+    box-shadow: 0px 0px 10px rgb(244, 93, 6);
+
+
+}
+
+
+#capsule .project-text{
+    width: 100%;
+}
+
+
+
+#capsule-content {
+    position: relative;
+    width: 105%;
+    margin-left: -4.5em;
+    margin-top: -10em;
+    height: auto;
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#capsule .project-desc {
+    width: 30%;
+}
+
+#capsule-poster {
+    width:50%;
+    padding: .5em;
+    margin-bottom: 4em;
+}
+
+#capsule-poster img{
+    width: 100%;
+}
+
+
+#capsule-hero{
+    /* border: solid 1px black; */
+    width: 63%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#capsule-hero img{
+    margin-left: 2em;
+    padding: .5em;
+    width: 100%;
+}
+
+#capsule-gif {
+    margin-bottom: 4em;
+}
+
+#capsule-gif img{
+    width: 40%;
+    margin-left: 10em;
+}
+
+
+/* DEAD NZ */
+
+
+#deadnz .node, #deadnz, #deadnz .project-text{ 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+#deadnz:has(.square:hover) a {
+    color: #ddff42;
+    text-shadow: 0px 0px 10px rgb(244, 93, 6), 0px 0px 20px rgb(244, 93, 6);
+
+}
+
+#deadnz:has(a:hover) .square {
+    background-color: #ddff42;
+    box-shadow: 0px 0px 10px rgb(244, 93, 6);
+
+
+}
+
+#deadnz {
+    
+    /* border: 1px solid green; */
+    width: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 2em;
+    padding-top: 3em;
+    padding-left: 0em;
+}
+
+#deadnz .project-desc {
+    font-family: "montserrat";
+    font-size: .8em;
+    /* margin-left: 1em; */
+    margin-top: .5em;
+    padding: 0;
+    width: 25%;
+}
+
+.deadnz-column2 {
+    margin-top: -13em;
+    margin-left: 20em;
+    display: flex;
+    flex: 45%;
+    max-width: 45%;
+    padding: 0 4px;
+    align-items: center;
+}
+
+.deadnz-column2 img {
+    margin-left: 3em;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#deadnz-inv {
+    opacity: 0;
+}
+
+/* Molds */
+
+#mold-inv {
+    opacity: 0;
+}
+
+ /* ILLUSTRATIONS */
+
+
+
+.illustration-column2 {
+    margin-top: -2em;
+    margin-left: 14em;
+    margin-right: 20%;
+    display: flex;
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 4px;
+    align-items: center;
+}
+
+.illustration-column2 img {
+    margin-left: 3em;
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+#illu_drop {
+    width: 145%;
+}
+
+#illu_pond {
+    width: 103%;
+    border: 1px dotted black;
+}
+
+#illu_hammer {
+    border: 1px dotted black;
+}
+
+#illu_chat1 {
+    width: 91%;
+    border: 1px dotted black;
+}
+
+#illu_chat2 {
+    width: 91%;
+    border: 1px dotted black;
+}
+
+#illu_noxious {
+    width: 95%;
+}
+
+#illu_jam {
+    width: 116%;
+}
+
+#illu_planty {
+    width: 115%;
+}
+
+#illu_break1 {
+    width: 113%;
+    border: 1px dotted black;
+}
+
+#illu_break2 {
+    width: 113%;
+    border: 1px dotted black;
+}
+
+#illu_everlost {
+    width: 115%;
+}
+
+#illu_444 {
+    width: 112%;
+}
+
+#illu_selfp {
+    width: 113%;
+}
+
+#illu_purp1 {
+    width: 102%;
+    border: 1px dotted black;
+}
+
+#illu_purp2 {
+    width: 102%;
+    border: 1px dotted black;
+}
+
+#illu_liturgy {
+    width: 125%;
+}
+
+#illu_liturgy-inv {
+    opacity: 0;
+    width: 125%;
 }
 
 
@@ -807,7 +1125,7 @@ span {
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 200px;
 }
 
@@ -876,7 +1194,7 @@ span {
 
     #project1 {
         
-        padding-top: 5em;
+       
     }
 
     .project-text {
@@ -990,10 +1308,16 @@ span {
 .bijou-column2 {
     margin-top: 2em;
     margin-left:-1.5em;
+    margin-bottom: 8em;
     flex: 105%;
     max-width: 105%;
     padding: 0 4px;
 }
+
+#bijou #self {
+    display: none;
+}
+
 
 #aroundu {
 
@@ -1054,6 +1378,175 @@ span {
     width: 100%;
 }
 
+/* // */
+
+#capsule-content {
+    position: relative;
+    width: 100%;
+    margin-left: -4.5em;
+    margin-top: 0;
+    height: auto;
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#capsule .project-desc {
+    width: 80%;
+}
+
+#capsule-poster {
+    width: 130%;
+    padding: .5em;
+    margin-left: 6em;
+    margin-bottom: 4em;
+}
+
+#capsule-poster img{
+    width: 100%;
+}
+
+
+#capsule-hero{
+    /* border: solid 1px black; */
+    width: 130%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+#capsule-hero img{
+    margin-left: 7em;
+    padding: .5em;
+    width: 100%;
+}
+
+#capsule-gif {
+    margin-bottom: 2em;
+}
+
+#capsule-gif img{
+    width: 70%;
+    margin-left: 4em;
+}
+
+#capsule #self{
+    display: none;
+}
+
+/* //// */
+
+
+#deadnz .project-desc {
+    font-family: "montserrat";
+    font-size: .8em;
+    /* margin-left: 1em; */
+    margin-top: .5em;
+    padding: 0;
+    width: 95%;
+}
+
+.deadnz-column2 {
+    margin-top: 0em;
+    margin-left: -3.8em;
+    margin-bottom: 100px;
+    display: block;
+    flex: 100%;
+    max-width: 100%;
+    
+}
+
+.deadnz-column2 img {
+    margin-top: 3em;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#deadnz #self {
+    display: none;
+}
+
+
+
+.illustration-column2 {
+    margin-top: 0em;
+    margin-left: -3.8em;
+    margin-bottom: 100px;
+    display: block;
+    flex: 95%;
+    max-width: 95%;
+    
+}
+
+.illustration-column2 img {
+    margin-top: 3em;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#illu_drop {
+    width: 100%;
+}
+
+#illu_pond {
+    width: 100%;
+}
+
+#illu_chat1 {
+    width: 100%;
+}
+
+#illu_chat2 {
+    width: 100%;
+}
+
+#illu_noxious {
+    width: 100%;
+}
+
+#illu_jam {
+    width: 100%;
+}
+
+#illu_planty {
+    width: 100%;
+}
+
+#illu_break1 {
+    width: 100%;
+}
+
+#illu_break2 {
+    width: 100%;
+}
+
+#illu_everlost {
+    width: 100%;
+}
+
+#illu_444 {
+    width: 100%;
+}
+
+#illu_selfp {
+    width: 100%;
+}
+
+#illu_purp1 {
+    width: 100%;
+}
+
+#illu_purp2 {
+    width: 100%;
+}
+
+#illu_liturgy {
+    width: 100%;
+}
+
 #pixie #self {
     display: none;
 }
@@ -1079,7 +1572,7 @@ span {
 
 
 #rave-thry {
-    width: 90%;
+    width: 100%;
 }
 
 
