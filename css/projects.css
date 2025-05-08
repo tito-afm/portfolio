@@ -327,6 +327,35 @@
 
 @media screen and (max-width: 932px) {
 
+    #cerberus .project-desc {
+        font-family: "montserrat";
+        font-size: .8em;
+        /* margin-left: 1em; */
+        margin-top: .5em;
+        padding: 0;
+        width: 95%;
+    }
+    
+    .cerberus-column {
+        margin-top: 0em;
+        margin-left: -3.8em;
+        margin-bottom: 100px;
+        display: block;
+        flex: 100%;
+        max-width: 100%;
+        
+    }
+    
+    .cerberus-column img {
+        margin-top: 3em;
+        vertical-align: middle;
+        width: 100%;
+    }
+    
+    #cerberus #self {
+        display: none;
+    }
+
     #syzygy-slideshow {
     
         left: -2em;
